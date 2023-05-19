@@ -1,0 +1,25 @@
+
+bar {
+        #status_command i3status
+	i3bar_command i3bar --transparency
+	mode dock
+	id bar-1
+	position top
+	workspace_buttons yes 
+	workspace_min_width 100
+	strip_workspace_numbers yes
+	padding 4px
+	#modifier Mod4
+	#tray_output primary NOT WORKING
+    colors {
+        background #000000
+        statusline #ffffff
+        separator #666666
+
+        focused_workspace  $peach $base $text 
+        active_workspace   $peach $base $text 
+        inactive_workspace $surface2 $base $text
+        urgent_workspace   $red $base $text
+        binding_mode       $red $base #ffffff
+    }
+}
